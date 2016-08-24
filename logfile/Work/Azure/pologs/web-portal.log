@@ -1,0 +1,16 @@
+2016-07-29 19:45:45.621 DEBUG 9716 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletConfigInitParams] PropertySource with lowest search precedence
+2016-07-29 19:45:45.621 DEBUG 9716 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [servletContextInitParams] PropertySource with lowest search precedence
+2016-07-29 19:45:45.621 DEBUG 9716 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemProperties] PropertySource with lowest search precedence
+2016-07-29 19:45:45.621 DEBUG 9716 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-07-29 19:45:45.621 DEBUG 9716 --- [main] o.s.w.c.s.StandardServletEnvironment     : Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,systemProperties,systemEnvironment]
+2016-07-29 19:45:45.621 DEBUG 9716 --- [main] o.s.w.c.s.StandardServletEnvironment     : Removing [defaultProperties] PropertySource
+2016-07-29 19:45:45.621 DEBUG 9716 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [defaultProperties] PropertySource with lowest search precedence
+2016-07-29 19:45:45.621 DEBUG 9716 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [applicationConfig: [classpath:/bootstrap.yml]] PropertySource with search precedence immediately higher than [defaultProperties]
+2016-07-29 19:45:45.684  INFO 9716 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8888
+2016-07-29 19:45:45.726 DEBUG 9716 --- [main] o.s.web.client.RestTemplate              : Created GET request for "http://localhost:8888/web-portal/default"
+2016-07-29 19:45:45.796 DEBUG 9716 --- [main] o.s.web.client.RestTemplate              : Setting request Accept header to [application/json, application/*+json]
+2016-07-29 19:45:46.086 DEBUG 9716 --- [main] o.s.web.client.RestTemplate              : GET request for "http://localhost:8888/web-portal/default" resulted in 200 (OK)
+2016-07-29 19:45:46.096 DEBUG 9716 --- [main] o.s.web.client.RestTemplate              : Reading [class org.springframework.cloud.config.environment.Environment] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@2756c0a7]
+2016-07-29 19:45:46.116  INFO 9716 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=web-portal, profiles=[default], label=master, version=a38832147712f25120ccfd0b533ce09564eb3d48
+2016-07-29 19:45:46.116  INFO 9716 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource [name='configService', propertySources=[MapPropertySource [name='file://C:/Apigee/work/controls-plm-config/web-portal.yml'], MapPropertySource [name='file://C:/Apigee/work/controls-plm-config/application.properties']]]
+2016-07-29 19:45:46.116 DEBUG 9716 --- [main] o.s.w.c.s.StandardServletEnvironment     : Adding [bootstrapProperties] PropertySource with highest search precedence
